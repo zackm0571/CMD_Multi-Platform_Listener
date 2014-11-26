@@ -1,0 +1,59 @@
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/statusText"
+        android:layout_gravity="left|top" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send CMD"
+        android:id="@+id/sendCMDButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="executeCMD" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostText"
+        android:layout_gravity="center"
+        android:hint="Hosted script URL" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmdText"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="Command" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paramText"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:hint="Parameter" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Screen"
+        android:id="@+id/viewScreenButton"
+        android:layout_gravity="right|bottom"
+        android:onClick="viewRemoteScreen" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="right|top" />
+
+</FrameLayout>
